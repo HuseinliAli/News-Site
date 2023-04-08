@@ -276,7 +276,19 @@ p {
   padding: 1rem;
   background-color: var(--primary-color);
 }
-
+.category {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+.category-sport {
+  background-color: var(--primary-color);
+}
+/* main section starts*/
 #main-nav {
   background-color: #fff;
   position: sticky;
@@ -294,23 +306,57 @@ p {
 #main-nav .logo {
   width: 65px;
 }
+
 #main-nav ul {
   display: flex;
   justify-self: start;
 }
+
 #main-nav ul li a {
   padding: 0.6rem;
   font-weight: bold;
 }
+
 #main-nav ul li a:hover {
   background-color: var(--light-color);
   color: var(--dark-color);
 }
+
 #main-nav ul li a.active {
   background-color: var(--primary-color);
   color: #fff;
   border-radius: 0.4rem;
 }
+
 #main-nav .social-icons {
   justify-self: end;
+}
+/* main section ends*/
+
+/* header section starts */
+#header {
+  color: #fff;
+  background: #333;
+  padding: 2rem;
+  position: relative;
+}
+#header::before {
+  content: "";
+  background: url("../img/rowing.jpeg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+#header .header-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+}
+#header .header-content {
+  z-index: 2;
 }
