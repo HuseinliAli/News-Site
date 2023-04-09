@@ -368,3 +368,41 @@ p {
   grid-template-columns: repeat(3, 1fr);
   gap: 0.4rem;
 }
+
+/* footer */
+#main-footer img {
+  width: 150px;
+}
+#main-footer a {
+  color: #fff;
+}
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#main-footer .footer-container > *:last-child {
+  background-color: #333;
+  grid-column: 1 / span 4;
+  text-align: center;
+  padding: 1rem;
+}
+#main-footer .footer-container input[type="email"] {
+  width: 90%;
+  padding: 0.4rem;
+}
+#main-footer .footer-container input[type="submit"] {
+  width: 90%;
+  margin-top: 1rem;
+  padding: 0.4rem;
+}
+#main-footer .footer-container ul li {
+  width: 100%;
+  padding: 0.4rem;
+}
+#main-footer .footer-container ul li a {
+  border-bottom: 1px solid;
+  width: 90%;
+}
+#main-footer .footer-container ul li a:hover {
+  color: #e76f51;
+}
