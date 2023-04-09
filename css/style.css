@@ -360,3 +360,11 @@ p {
 #header .header-content {
   z-index: 2;
 }
+/* header ends */
+
+/* articles starts */
+#main-articles .articles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+}
